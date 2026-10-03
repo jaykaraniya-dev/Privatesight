@@ -1,0 +1,16 @@
+node_modules/
+test-results/
+dist/
+build/
+coverage/
+.cache/
+*.log
+.env
+.env.*
+!.env.example
+
+/datasets/raw/
+
+/competitor-01/
+
+/artifacts/

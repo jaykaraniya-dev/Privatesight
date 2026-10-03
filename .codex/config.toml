@@ -1,0 +1,7 @@
+# Project-local Codex configuration for PrivateSight.
+# This file is intentionally conservative. Project configuration is used only
+# when Codex trusts the repository.
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["@playwright/mcp@latest", "--extension"]

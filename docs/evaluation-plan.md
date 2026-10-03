@@ -1,8 +1,8 @@
 # Evaluation Plan
 
-Status: Prompt 2 confirms the five dimensions and weights remain the only official scoring details available. No benchmark has been approved or run.
+Status: Prompt 4 preserves the five dimensions and weights as the only official scoring details available. No PrivateSight benchmark has been approved or run. The TodoMVC manual check is browser-tool connectivity evidence, not benchmark evidence.
 
-Use `evaluation-metrics.md` as the metric register. Before evaluation begins, Prompt 3 must resolve task cases, ground truth, formulas, target browsers/devices, workload, timing boundaries, resource measures, sample sizes, aggregation, thresholds, and acceptance owner. Prompt 2 recorded bounded options and evidence gaps but did not invent decisions.
+Use `evaluation-metrics.md` as the metric register and `evaluation-data-requirements.md` for the required corpus/evidence. Before evaluation begins, the owner must resolve task cases, ground truth, formulas, target browsers/devices, workload, timing boundaries, resource measures, sample sizes, aggregation, thresholds, and acceptance owner. Existing evidence records bounded options without inventing SIH rules.
 
 The later plan must include:
 - frozen screen/browser tasks with modality-specific ground truth;

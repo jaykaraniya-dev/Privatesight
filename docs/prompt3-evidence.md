@@ -15,3 +15,7 @@
 | Fail-closed on detector/sanitizer/gate uncertainty | Privacy invariant favors denial over raw export. | PROPOSED | Failure handling. | Needs owner UX decision | Scope and exceptions unknown. |
 | Final visual model/runtime/quantization | Choice depends on task/data/device benchmarks. | OWNER-REQUIRED / BENCHMARK-DEPENDENT | Defers final selection. | Unresolved | No approved benchmark yet. |
 
+## Subsequent evidence note
+
+The row describing Prompt 3 browser inventory remains accurate historical evidence for that session. On 2026-10-04, Prompt 4 completed a bounded runtime verification through Chrome Profile 8. See `human-verification.md` and `prompt4-evidence.md`. The later result supersedes only the current Playwright connectivity status; it does not retroactively change the Prompt 3 observation or prove PrivateSight product behavior.
+

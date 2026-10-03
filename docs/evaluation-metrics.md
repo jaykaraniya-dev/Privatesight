@@ -1,5 +1,7 @@
 # Evaluation Metrics
 
+Prompt 4 data and annotation requirements are maintained in `evaluation-data-requirements.md`. That document proposes evidence needed to operationalize these dimensions; it does not define official SIH formulas.
+
 ## Officially supplied criteria
 
 | Dimension | Weight | Official wording status | Definitions still required |

@@ -1,4 +1,4 @@
-# Open Questions for Prompt 4
+# Open Questions After Prompt 4 Evidence Audit
 
 Prompt 3 translated Prompt 2 evidence into candidate architectures and explicit decision boundaries. The following questions still block final architecture/model selection and implementation planning.
 
@@ -43,10 +43,20 @@ Prompt 3 translated Prompt 2 evidence into candidate architectures and explicit 
 30. What checks are required for synthetic-generation memorization, template leakage, near duplicates, and real-data domain shift?
 
 ## Connected sources and delivery
-31. Is there an actual PrivateSight GitHub repository, Notion space, Drive folder, or Figma file that should be linked?
+31. Is there an actual PrivateSight Notion space, Drive folder, or Figma file that should be linked? The GitHub repository is now identified as `https://github.com/jaykaraniya-dev/Privatesight.git`.
 32. What is the final SIH submission date, demo environment, pitch duration, and acceptance owner?
-33. Can the Playwright MCP browser extension be connected and verified against a non-personal test profile?
 34. Should the local competitor video be treated as the supplied YouTube reference despite the unverified URL-to-file linkage?
+
+## Prompt 4 dataset and evidence decisions
+
+35. Is the intended dataset use limited to the SIH academic competition, or must all selected data also permit later commercial/open-source use?
+36. Who is authorized to approve custom, noncommercial, Reuters, NVIDIA, and conflicting Ai4Privacy terms?
+37. Which proposed PII classes are in the default fail-closed gate, and what public/private context exceptions are permitted?
+38. Which languages, browsers, operating systems, viewport/zoom/theme variants, page types, and hardware classes must the visual corpus cover?
+39. What annotation unit and adjudication process apply to text spans, OCR boxes, visual boxes/masks, DOM nodes, contextual sensitivity, and action targets?
+40. Who will hold the frozen evaluation set, who may access it, and what event invalidates and replaces it?
+41. What exact similarity methods and thresholds define near-duplicate, template, identity, and layout contamination?
+42. Are controlled synthetic browser fixtures sufficient for the initial gate, or is consented real/browser-derived data required?
 
 ## Prompt 2 disposition
 
@@ -56,13 +66,11 @@ Prompt 2 did not invent SIH formulas or thresholds. It established proposed meas
 
 Prompt 3 produced architecture candidates and technology comparisons without selecting a model, runtime, browser support matrix, or topology. See `system-architecture.md`, `architecture-options.md`, `browser-architecture.md`, `privacy-architecture.md`, `observation-architecture.md`, `inference-runtime-analysis.md`, `action-validation.md`, and `architecture-decisions.md`.
 
-## Prompt 4 completion gate
-Before implementation planning, Prompt 4 must provide or produce:
-- an evidence-backed metric protocol or a clearly bounded decision request for every unresolved metric;
-- a confirmed user/workflow and browser/device matrix;
-- a threat model, outbound data contract, failure policy, and action-validation policy;
-- a visual/browser data plan with rights, annotations, frozen evaluation strategy, and contamination controls;
-- approval criteria and benchmark plan for the already documented candidate model/runtime set, without selecting the final model prematurely;
-- a live Chrome/Firefox capability verification plan, including a dedicated Playwright MCP extension-profile check where available;
-- an evidence matrix that separates facts, measurements, third-party claims, and recommendations.
+## Resolved checkpoint
+
+The Playwright MCP connection was runtime verified on 2026-10-04 through Chrome Profile 8 using TodoMVC. See `human-verification.md`. This closes the tool-connectivity question only; Firefox, PrivateSight extension behavior, privacy containment, and performance remain unverified.
+
+## Next decision gate
+
+Before implementation planning or model selection, the owner must approve the intended-use/license policy, PII taxonomy and fail-closed rules, visual/browser corpus and annotation protocol, split/frozen-set governance, browser/device/task matrix, and the missing evaluation definitions. Architecture/runtime/model choices remain benchmark-dependent.
 

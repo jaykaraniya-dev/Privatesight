@@ -86,3 +86,22 @@ Record material project decisions here. This log records Prompt 0 reconciliation
 - **Decision:** Do not claim navigation, DOM, screenshot, or interaction verification. Require a dedicated connected profile for a later live check.
 - **Evidence:** `docs/browser-architecture.md`; `docs/prompt3-evidence.md`.
 
+## DEC-014 - Record the later bounded Playwright runtime verification
+- **Date:** 2026-10-04
+- **Context:** Chrome Profile 8 exposed the existing TodoMVC page to Playwright MCP after the Prompt 3 session.
+- **Decision:** Treat existing-tab access, title/DOM observation, screenshot capture, one harmless todo interaction, and resulting-state observation as confirmed tool-connectivity evidence. Preserve Prompt 3's earlier result as historical rather than rewriting it.
+- **Limit:** This is not evidence for PrivateSight extension behavior, browser parity, privacy containment, reliability, or performance.
+- **Evidence:** `docs/human-verification.md`; `docs/evidence/playwright-todomvc-before.png`.
+
+## DEC-015 - Keep all 11 candidate roles unassigned after Prompt 4
+- **Date:** 2026-10-04
+- **Context:** The candidates provide text-oriented labels but have licensing, lineage, contamination, domain, or evaluation-independence limits and no visual/browser ground truth.
+- **Decision:** Approve no candidate for training, validation, or final evaluation. Preserve descriptive suitability and rejection/hold reasons until owner rights and protocol decisions are made.
+- **Evidence:** `docs/dataset-audit.md`; `docs/data-licensing.md`; `docs/contamination-audit.md`.
+
+## DEC-016 - Separate development, frozen evaluation, and demo evidence by lineage
+- **Date:** 2026-10-04
+- **Context:** Publisher split labels and exact-text disjointness do not prevent generator, template, source, identity, page-family, or render-variant leakage.
+- **Decision:** Any approved derived corpus must be grouped by lineage before role assignment; demo/manual cases cannot supply scored evidence; final evaluation is frozen before tuning.
+- **Evidence:** `docs/dataset-split-strategy.md`.
+

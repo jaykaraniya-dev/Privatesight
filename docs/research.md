@@ -57,6 +57,10 @@ No copyrighted source has been reproduced here. The notes retain only facts and 
 - No PrivateSight Figma file, Notion space, Drive project folder, or GitHub repository has been identified.
 - No permitted visual/browser PII dataset or frozen browser benchmark is available.
 
+## Prompt 4 dataset-source verification
+
+Current publisher pages were used only to corroborate source identity and card-level metadata; they do not approve legal use or validate quality claims. The local `pii_train` folder maps to `redmadrobot-rnd/pii_train`, and `Privasis-Zero` maps to `nvidia/Privasis-Zero`. Ai4Privacy pages continue to point to custom/additional terms. Exact local source commits and candidate-specific limits are recorded in `dataset-audit.md`, `data-licensing.md`, and `prompt4-evidence.md`.
+
 ## Prompt 2 evidence research
 
 The Prompt 2 evidence ledger is in [`prompt2-evidence.md`](prompt2-evidence.md). It records current primary documentation for Chrome/Firefox capture and scripting, permissions and extension messaging, ONNX Runtime Web and Transformers.js execution paths, and browser-agent benchmark resources.

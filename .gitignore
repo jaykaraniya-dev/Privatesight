@@ -14,3 +14,6 @@ coverage/
 /competitor-01/
 
 /artifacts/
+
+# Local Playwright MCP session logs/snapshots; may contain browser state.
+/.playwright-mcp/

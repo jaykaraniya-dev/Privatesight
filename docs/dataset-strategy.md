@@ -1,7 +1,7 @@
-# Dataset Strategy and Prompt 1 Intake
+# Dataset Strategy and Prompt 4 Audit
 
 ## Gate status
-All 11 folders under `datasets/raw/` remain candidates. Prompt 1 opened only local metadata, cards, licenses, schemas, row headers, and aggregate counts. No raw file was changed, merged, relabeled, trained on, or uploaded.
+All 11 folders under `datasets/raw/` remain candidates. Prompt 1 and Prompt 4 inspected only local metadata, cards, licenses, schemas, row headers, and aggregate counts. No raw file was changed, merged, relabeled, trained on, or uploaded.
 
 No candidate is approved as final evaluation data. The collection does not provide screenshots, browser video frames with annotations, DOM/accessibility captures, OCR ground truth, visual boxes or masks, or browser-action traces. It is therefore insufficient evidence for the visual-context, visual PII, redaction-region, browser-state, and action-grounding requirements.
 
@@ -41,7 +41,7 @@ The current collection may support research on text NER, text-span PII detection
 - Chrome/Firefox behavior;
 - privacy-gate network enforcement.
 
-Prompt 2 must find permitted visual/browser evidence or define a synthetic browser-data creation and annotation plan for approval.
+Prompt 4 defines a proposed synthetic browser-data creation, annotation, split, and frozen-evaluation plan in `dataset-gap-analysis.md`, `dataset-split-strategy.md`, and `evaluation-data-requirements.md`. Owner approval and actual data creation remain future work.
 
 ## Split and contamination controls
 - Keep raw folders immutable.

@@ -18,9 +18,9 @@ Likelihood is a qualitative Prompt 1 assessment, not a measured probability.
 | R-012 | Server or provider retention/logging undermines the privacy claim | Critical | Unknown | Define provider, deployment, retention, logging, and deletion contracts before integration. | Open |
 | R-013 | Competitor marketing claims are mistaken for verified architecture or performance | Medium | Medium | Keep all competitor technology and performance statements attributed until code or measurements exist. | Open |
 | R-014 | Test, demo, screenshot, or trace artifacts retain PII | High | Medium | Use synthetic fixtures; scrub artifacts; restrict retention; review captured video and screenshots. | Open |
-| R-015 | Missing Git metadata prevents history, remote, and change-state verification | Medium | Confirmed | Identify or restore the authoritative repository before relying on Git history. | Open |
-| R-016 | Playwright MCP extension configuration is mistaken for a verified browser connection | Medium | Confirmed | Connect a safe browser profile and verify URL/title/DOM/screenshot/interaction evidence. | Open |
-| R-017 | No identified Notion, Drive, GitHub, or Figma project source causes fragmented planning | Medium | Confirmed | Link only verified project spaces; keep repository canonical meanwhile. | Open |
+| R-015 | Missing Git metadata prevents history, remote, and change-state verification | Medium | Confirmed historically | Git checkout, `main`, checkpoint `3544fa1`, and the owner-supplied remote are now present. | Closed 2026-10-04 |
+| R-016 | Playwright MCP extension configuration is mistaken for a verified browser connection | Medium | Confirmed historically | Runtime verification passed through Chrome Profile 8; preserve the bounded evidence and limitations in `human-verification.md`. | Mitigated for connectivity only |
+| R-017 | No identified Notion, Drive, or Figma project source causes fragmented planning | Medium | Confirmed | Link only verified project spaces; keep repository canonical meanwhile. GitHub is now identified. | Open |
 | R-018 | Floating `latest` dependencies reduce reproducibility | Medium | Confirmed | Pin versions during implementation planning after runtime choices are made. | Open |
 | R-019 | Synthetic text performance does not transfer to real rendered browser content | High | High | Add real-world-like, rights-cleared visual/browser evaluation and domain-shift analysis. | Open |
 | R-020 | Sanitized layout still reveals identity or removes information needed for reasoning | Critical | Unknown | Evaluate residual identification risk and task utility together on paired cases. | Open |
@@ -31,5 +31,8 @@ Likelihood is a qualitative Prompt 1 assessment, not a measured probability.
 | R-025 | Extension lifecycle differences cause loss of transient state or unguarded retry behavior | High | Confirmed | Design for non-persistent coordinator behavior; test Chrome/Firefox lifecycle and state recovery after scope approval. | Open |
 | R-026 | Partial cross-origin frame access yields inconsistent observation or action behavior | High | Confirmed | Define frame policy and test per browser before support claim. | Open |
 | R-027 | A local detector/sanitizer fails open under timeout, error, or unsupported content | Critical | Unknown | Owner must approve failure policy; later test every failure path with synthetic canaries. | Open |
-| R-028 | In-app browser evidence is mistaken for Playwright MCP extension verification | Medium | Confirmed | Record status as not verifiable until a clean extension-attached profile is available. | Open |
+| R-028 | In-app browser evidence is mistaken for Playwright MCP extension verification | Medium | Confirmed historically | Chrome Profile 8 produced actual Playwright MCP evidence; keep it distinct from in-app browser observations. | Closed 2026-10-04 |
+| R-029 | A candidate is used under incompatible or unreviewed license/provenance terms | High | High | Treat all 11 as unapproved; require authoritative license/version and intended-use review before assignment. | Open |
+| R-030 | Text-only candidates are treated as evidence for visual/browser PII performance | Critical | High | Require paired screenshot/DOM/OCR/region/action data and a frozen visual/browser evaluation set. | Open |
+| R-031 | Synthetic templates, identities, or render variants cross development and evaluation roles | High | High | Split by source/template/generator/identity/site/task/capture family before augmentation and run multimodal similarity checks. | Open |
 

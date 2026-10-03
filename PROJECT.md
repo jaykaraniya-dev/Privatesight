@@ -1,9 +1,9 @@
 # PrivateSight
 
 ## Status
-Prompt 1 authoritative intake, Prompt 2 evidence research, and Prompt 3 architecture/technology decision-boundary work are complete as of 2026-10-03. The official problem text and evaluation weights supplied by the user, reference evidence, candidate datasets, current browser/runtime constraints, architecture candidates, and owner decision boundaries have been reconciled.
+Prompt 1 authoritative intake, Prompt 2 evidence research, Prompt 3 architecture/technology decision-boundary work, and Prompt 4 dataset/evaluation evidence audit are complete as of 2026-10-04. The official problem text and evaluation weights, reference evidence, all 11 dataset candidates, browser/runtime constraints, architecture candidates, and owner decision boundaries have been reconciled.
 
-No product feature, final architecture, final model, training run, dataset merge, or production deployment has been authorized or completed. Prompt 4 may begin only after the owner resolves the required decision set and approves an implementation-planning scope.
+No product feature, final architecture, final model, training run, dataset merge, or production deployment has been authorized or completed. Prompt 4 defines the data and evaluation foundation; unresolved owner and benchmark decisions still block implementation planning.
 
 ## Project definition
 PrivateSight is a privacy-preserving browser agent for **SIH26171 - On-device Visual Perception for Light-weight Browser Agents**. It must use local visual perception in the browser, detect sensitive information before network transmission, sanitize that context locally, send only anonymized and unidentifiable context to a server-side LLM/VLM when server reasoning is needed, receive an actionable command, validate it locally, and execute it in the browser.
@@ -46,7 +46,7 @@ The authoritative source describes browser users who need agent assistance while
 The confirmed primary journey is: a user requests assistance, PrivateSight observes relevant browser state locally, detects and sanitizes sensitive context, sends only sanitized context when server reasoning is needed, receives a structured result or action, validates it locally, and executes it. Form interaction, click, and scroll are explicitly illustrated in the supplied problem material. Confirmation rules for consequential actions remain an open product and security decision.
 
 ## Repository and data state
-The repository remains a scaffold: `src/` contains no product implementation and the only Playwright test is a placeholder against `example.com`. Playwright MCP extension mode is configured but a live browser connection has not been verified. This workspace has no Git metadata and no matching GitHub repository has been identified.
+The repository remains a scaffold: `src/` contains no product implementation and the only Playwright test is a placeholder against `example.com`. The workspace is a Git checkout on `main`, with verified checkpoint `3544fa1` and remote `https://github.com/jaykaraniya-dev/Privatesight.git` supplied by the owner. Playwright MCP was runtime verified on 2026-10-04 through Chrome Profile 8 against TodoMVC: existing-tab access, title/DOM observation, screenshot capture, one harmless todo interaction, and resulting-state observation passed. This does not establish PrivateSight extension behavior, browser parity, privacy containment, or performance.
 
 All 11 folders under `datasets/raw/` remain candidates. The local audit found text-only NER, span, and sanitization resources. None contains browser screenshots, visual boxes or masks, DOM/accessibility captures, or action traces. The collection therefore cannot establish the SIH visual/browser requirements. See `docs/dataset-strategy.md` and `datasets/dataset-registry.csv`.
 
@@ -62,5 +62,5 @@ All 11 folders under `datasets/raw/` remain candidates. The local audit found te
 - Audit history: `docs/repository-audit.md`
 
 ## Next gate
-Prompt 3 produced architecture candidates, browser/runtime constraints, privacy/action boundaries, and a decision matrix without ranking or selecting a final design. Prompt 4 must obtain or record owner decisions for the metric protocol, threat model/outbound contract, browser/device scope, visual/browser data plan, dataset rights, action policy, and final evaluation criteria before implementation planning or model selection.
+Prompt 4 must finish owner review of dataset rights, taxonomy and split policy, define or obtain the evaluation protocol, and approve a rights-cleared visual/browser corpus plan. Prompt 5 or the next explicit gate may then authorize bounded experiments; implementation and final model/architecture selection remain blocked until the required evidence exists.
 

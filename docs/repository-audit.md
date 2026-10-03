@@ -107,3 +107,26 @@ All ten Prompt 0 reporting questions are answered in `PROJECT.md` and the linked
 ## Stop condition
 Prompt 1 stops here. Architecture research/selection, implementation, model training, dataset assembly, and production work remain outside this gate.
 
+# Repository Audit — Prompt 4 Dataset and Verification Gate
+
+**Date:** 2026-10-04
+**Scope:** dataset metadata, licensing/provenance, contamination, taxonomy, split/evaluation-data requirements, and bounded human browser verification. No product implementation, training, raw-data modification, model selection, architecture selection, or Git push.
+
+## Current repository corrections
+
+- The historical Prompt 0/1 statements about absent Git metadata and an unidentified GitHub repository are superseded by the current checkout on `main`, verified checkpoint `3544fa1`, and owner-supplied remote `https://github.com/jaykaraniya-dev/Privatesight.git`.
+- The historical Prompt 2/3 Playwright status remains accurate for those sessions. It is superseded for current connectivity by the 2026-10-04 Chrome Profile 8 TodoMVC runtime verification recorded in `human-verification.md`.
+- All 11 registry entries were audited individually. DS-CAND-006 and DS-CAND-010 source URLs were resolved from local cards/current publisher pages; no raw dataset content changed.
+
+## Prompt 4 documentation changes
+
+- Created or completed: `dataset-audit.md`, `dataset-gap-analysis.md`, `pii-taxonomy.md`, `dataset-split-strategy.md`, `contamination-audit.md`, `data-licensing.md`, `evaluation-data-requirements.md`, `human-verification.md`, and `prompt4-evidence.md`.
+- Updated current project/gate state in `PROJECT.md`, `README_FIRST.md`, `dataset-strategy.md`, `evaluation-plan.md`, `evaluation-metrics.md`, `open-questions.md`, `risk-register.md`, `decisions.md`, `browser-architecture.md`, `tooling-and-knowledge-architecture.md`, and `tools/playwright-mcp/SETUP.md`.
+- Added immutable screenshot evidence at `docs/evidence/playwright-todomvc-before.png`; it contains the empty public TodoMVC page and no private browser content.
+- Added `.playwright-mcp/` to `.gitignore` so local MCP session logs and page snapshots cannot be committed as browser state.
+- Updated metadata only in `datasets/dataset-registry.csv`; `datasets/raw/` was not changed.
+
+## Gate finding
+
+The text candidates can support limited future text research only after rights and quality approval. They do not supply the visual/browser evidence needed for screenshot understanding, OCR localization, visual PII regions, redaction masks, DOM/accessibility alignment, browser state, or action grounding. Owner decisions and a rights-cleared visual/browser corpus remain prerequisites for experiments and implementation planning.
+

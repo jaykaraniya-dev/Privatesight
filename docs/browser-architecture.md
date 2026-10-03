@@ -34,9 +34,9 @@
 
 ## Playwright MCP verification
 
-**Result: NOT VERIFIABLE IN CURRENT SESSION.**
+**Current result: VERIFIED for the bounded TodoMVC sequence on 2026-10-04.**
 
-The repository declares `npx @playwright/mcp@latest --extension`, which is configuration evidence only. The current safe browser inventory showed only the Codex in-app browser and no extension-attached Chrome/Firefox browser profile. No navigation, DOM read, screenshot, interaction, or state change was performed through Playwright MCP. The in-app browser is not a substitute for testing the configured extension connection.
+Chrome Profile 8 exposed an existing TodoMVC tab through Playwright MCP. The run verified page access, title and DOM/page-state observation, screenshot capture, insertion of the harmless todo `PrivateSight Test`, and observation of `1 item left`. Evidence and limitations are recorded in `human-verification.md`.
 
-To obtain a live result, owner/operator must provide a dedicated clean Chrome/Edge profile with the Playwright MCP extension connected, then rerun the harmless TodoMVC sequence defined in `tools/playwright-mcp/SETUP.md`.
+This result supersedes the Prompt 3 session limitation for tool connectivity only. It does not establish extension-product behavior, Firefox parity, security/privacy containment, performance, or reliability on other machines.
 

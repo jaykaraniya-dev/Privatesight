@@ -23,8 +23,8 @@
 - The Prompt 0 baseline found no matching GitHub repository or Google Drive project source. Prompt 1 supplied local files, so generic Drive results were not used.
 - No actual PrivateSight Notion space or Figma file was identified. No Notion synchronization or Figma work was performed.
 - Context7 and OpenAI developer documentation were not needed because Prompt 1 made no implementation technology decision.
-- `.codex/config.toml` declares Playwright MCP extension mode, and Prompt 0 observed an extension-status tab. A live page connection, DOM inspection, screenshot, and interaction remain unverified.
-- The workspace still has no `.git` metadata; branch, dirty state, remote, and history cannot be established.
+- `.codex/config.toml` declares Playwright MCP extension mode. Prompt 4 later runtime-verified the bounded TodoMVC sequence through Chrome Profile 8; see `human-verification.md`.
+- The workspace is now a Git checkout on `main`. The owner supplied checkpoint `3544fa1` and remote `https://github.com/jaykaraniya-dev/Privatesight.git`. No push is authorized in Prompt 4.
 
 ## Prompt 2 verified technical sources
 
@@ -33,9 +33,9 @@
 - Transformers.js documents WebGPU execution with browser/feature-flag caveats.
 - ScreenSpot, ScreenSpot-Pro, WebArena, and BrowserGym were reviewed as benchmark references. None is accepted as a PrivateSight privacy/redaction dataset without separate rights and fit review.
 
-## Prompt 3 live-verification status
+## Playwright live-verification status
 
-The safe browser inventory for Prompt 3 contained only Codex's in-app browser and no extension-attached Chrome/Firefox profile. The configured Playwright MCP extension connection is therefore **not verifiable in the current session**. No live navigation, DOM inspection, screenshot acquisition, interaction, or resulting-state observation was claimed.
+Prompt 3 could not verify an extension-attached profile. On 2026-10-04, Chrome Profile 8 was made available and the TodoMVC sequence passed for existing-tab access, page inspection, screenshot capture, a harmless interaction, and resulting-state observation. This is runtime evidence for the tool connection only; browser parity, product behavior, privacy controls, and performance remain unverified.
 
 ## Use rules
 - Verify source identity before granting an external system authority.

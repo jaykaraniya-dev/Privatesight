@@ -1,6 +1,6 @@
 # Playwright MCP Setup for Codex on Windows
 
-This is a setup note, not evidence that the configured service/browser is running. The repository currently declares `npx @playwright/mcp@latest --extension` in `.codex/config.toml`, and a Playwright Extension Status tab was visible during the Prompt 0 audit. No page interaction, extension behavior, or PrivateSight browser regression was verified. Recheck current official Playwright MCP instructions before changing installation/configuration commands; package tags using `latest` are mutable and are not a reproducible version pin.
+The repository declares `npx @playwright/mcp@latest --extension` in `.codex/config.toml`. On 2026-10-04, the configured path was runtime verified through dedicated Chrome Profile 8 against TodoMVC, including existing-tab access, DOM/page inspection, screenshot capture, one harmless interaction, and resulting-state observation. See `docs/human-verification.md`. This does not verify PrivateSight product behavior or serve as deterministic regression coverage. Recheck current official Playwright MCP instructions before changing installation/configuration commands; package tags using `latest` are mutable and are not a reproducible version pin.
 
 ## What you install
 

@@ -47,17 +47,17 @@ Useful synthetic scenarios include forms, account pages, inbox/chat views, medic
 
 ### Human annotation
 
-`PROPOSED`: human review is required for category, exact text span, OCR span, DOM node, visual box/mask, context sensitivity, redaction target, task-relevant region, and action target. Double annotation/adjudication and quality sampling remain `OWNER-REQUIRED` because no protocol is approved.
+`CONFIRMED`: D-06 approves primary annotation, independent review for evaluation-critical cases, adjudication, versioned schemas, and explicit ambiguity labels. Prompt 6 defines the work package and QA outcomes. The process has not yet been executed, so measured agreement and case acceptance remain unavailable.
 
 ### Frozen evaluation
 
-`OWNER-REQUIRED`: select and isolate a source-diverse frozen set before model, threshold, runtime, or architecture selection. It must include negatives, difficult visual cases, browser-state cases, and raw-to-sanitized pairs. No existing candidate can serve as the overall frozen evaluation set.
+`CONFIRMED` policy / `NOT BUILT`: D-07 approves versioned, immutable, access-controlled frozen evaluation with protected labels and explicit invalidation. Prompt 6 defines the build procedure. No existing candidate can serve as the overall frozen evaluation set, and no frozen set currently exists.
 
 ## Real-data constraints
 
-Any future real-data collection is `OWNER-REQUIRED` and must have documented consent, purpose limitation, minimization, access control, retention/deletion schedule, revocation handling, and exclusion from public repositories. Real credentials, cookies, tokens, private accounts, and personal browser profiles are prohibited.
+Personal real-data collection is `DEFERRED` by D-05. The initial corpus permits synthetic and controlled non-personal cases only. Any later real-data proposal requires a new owner decision plus documented consent, purpose limitation, minimization, access control, retention/deletion, revocation, and repository exclusion. Real credentials, cookies, tokens, private accounts, and personal browser profiles remain prohibited.
 
 ## Gap closure gate
 
-Before model/data selection, the owner must approve a taxonomy and collection protocol; rights-cleared synthetic browser fixtures must be built; an annotation schema must link DOM/accessibility/OCR/visual coordinates; and the frozen set must be isolated with contamination controls. Sample counts remain `UNKNOWN` until the evaluation protocol is defined.
+The owner has approved the working taxonomy, staged scope, synthetic/controlled-non-personal policy, annotation protocol, contamination policy, and frozen-set governance through D-02 and D-04 through D-08. Before candidate experimentation, rights-cleared fixtures must be built; aligned annotations must pass QA; contamination review must precede role assignment; and the frozen set and harness must be qualified. Final corpus size remains `BENCHMARK-DEPENDENT`.
 

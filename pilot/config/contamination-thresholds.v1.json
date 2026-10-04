@@ -1,0 +1,9 @@
+{
+  "version": "pilot-contamination-1.0.0",
+  "status": "PILOT_CALIBRATED_FOR_12_CASE_QUALIFICATION",
+  "near_text_jaccard": 0.72,
+  "image_histogram_cosine": 0.985,
+  "layout_jaccard": 0.80,
+  "notes": "Internal pilot thresholds calibrated only against the deliberate similar and independent controls in the 12-case qualification corpus. They are configurable and are not universal, production, or SIH thresholds."
+}
+

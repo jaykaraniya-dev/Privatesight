@@ -43,6 +43,8 @@ The current collection may support research on text NER, text-span PII detection
 
 Prompt 4 defines a proposed synthetic browser-data creation, annotation, split, and frozen-evaluation plan in `dataset-gap-analysis.md`, `dataset-split-strategy.md`, and `evaluation-data-requirements.md`. Owner approval and actual data creation remain future work.
 
+Prompt 5 further bounds this proposal in `visual-browser-corpus-spec.md`, `visual-annotation-protocol.md`, and `contamination-policy.md`. These specifications define the decisions and metadata needed before generation; they do not approve a source, assign a role, authorize training, or create a corpus.
+
 ## Split and contamination controls
 - Keep raw folders immutable.
 - Assign no training, validation, or final-evaluation role until source identity, license, taxonomy, and lineage are approved.

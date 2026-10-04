@@ -54,7 +54,7 @@ No copyrighted source has been reproduced here. The notes retain only facts and 
 ## Reference gaps
 - No authoritative full SIH rubric, metric formulas, thresholds, or judging protocol was supplied.
 - No source code or reproducible benchmark accompanies the competitor video.
-- No PrivateSight Figma file, Notion space, Drive project folder, or GitHub repository has been identified.
+- No PrivateSight Figma file, Notion space, or Drive project folder has been identified. The engineering repository is identified as `https://github.com/jaykaraniya-dev/Privatesight.git` with local checkpoint `3544fa1`.
 - No permitted visual/browser PII dataset or frozen browser benchmark is available.
 
 ## Prompt 4 dataset-source verification
@@ -72,4 +72,14 @@ Key findings:
 - ONNX Runtime Web documents a broad WebAssembly path and browser-dependent accelerated paths. Current documentation does not support assuming WebGPU parity in Firefox.
 - ScreenSpot/ScreenSpot-Pro provide GUI grounding precedents; WebArena and BrowserGym provide browser-task precedents. None is a complete PII/redaction/privacy-gate benchmark for PrivateSight.
 - Public SIH26171 repositories are competitor references only. Their claims are not performance or security evidence without reproducible inspection.
+
+## Prompt 5 disposition
+
+Prompt 5 added no external technical or performance claim. It transformed Prompt 0–4 evidence into owner-decision, corpus, annotation, contamination, SIH/internal protocol, platform, and benchmark specifications. All unresolved choices remain labeled in `owner-decision-gate.md`; no source, model, runtime, browser matrix, metric formula, threshold, or architecture was approved.
+
+## Prompt 6 current-documentation verification
+
+Prompt 6 used Context7 for Playwright 1.63.0, ONNX Runtime 1.25.0, and current Transformers.js repository documentation. Current official Chrome and MDN documentation was also consulted for visible-tab capture, Firefox WebExtensions tabs, WebGPU feature detection, and WebAssembly. The source ledger is `prompt6-evidence.md`.
+
+The verified facts define APIs and experiment metadata only. They do not establish runtime performance, model/operator compatibility on the reference device, extension privacy containment, Chrome/Firefox parity, or a production technology choice. WebNN target support remains unknown for this gate.
 

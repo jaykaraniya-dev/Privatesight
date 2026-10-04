@@ -1,6 +1,6 @@
 # Evaluation Metrics
 
-Prompt 4 data and annotation requirements are maintained in `evaluation-data-requirements.md`. That document proposes evidence needed to operationalize these dimensions; it does not define official SIH formulas.
+Prompt 4 data and annotation requirements are maintained in `evaluation-data-requirements.md`. Prompt 5 approved the internal protocol boundary. Prompt 6 defines internal measurement units and instrumentation in `benchmark-harness-spec.md`; these remain PrivateSight internal metrics and do not define official SIH formulas.
 
 ## Officially supplied criteria
 
@@ -36,5 +36,5 @@ These are repository quality requirements from `AGENTS.md` and the user, not add
 - **Resources:** repeatable profiling on agreed target devices and browsers.
 - **Latency:** end-to-end timing for the same frozen tasks, including local processing, network, server reasoning, validation, and execution as applicable.
 
-These evidence categories do not add thresholds. Prompt 2 must locate an official scoring protocol or prepare options for owner approval.
+These evidence categories do not add thresholds. D-09 authorizes clearly labeled internal definitions; official SIH formulas, thresholds, and pass/fail rules remain unresolved.
 

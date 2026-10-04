@@ -105,3 +105,67 @@ Record material project decisions here. This log records Prompt 0 reconciliation
 - **Decision:** Any approved derived corpus must be grouped by lineage before role assignment; demo/manual cases cannot supply scored evidence; final evaluation is frozen before tuning.
 - **Evidence:** `docs/dataset-split-strategy.md`.
 
+## DEC-017 - Centralize unresolved owner choices without deciding them
+- **Date:** 2026-10-04
+- **Context:** Prompt 4 exposed interdependent rights, privacy, corpus, annotation, split, metric, and platform choices across several documents.
+- **Decision:** Use `docs/owner-decision-gate.md` as the canonical D-01–D-12 register and `docs/owner-question-pack.md` as the minimum response form. Status remains owner-required, unknown, or benchmark-dependent until evidence or an explicit owner answer changes it.
+- **Evidence:** Prompt 5; `docs/decision-dependency-graph.md`.
+
+## DEC-018 - Keep official SIH facts separate from the internal benchmark protocol
+- **Date:** 2026-10-04
+- **Context:** Only the five SIH dimensions and weights are confirmed; formulas, thresholds, aggregation, devices, browser versions, annotation rules, latency boundary, and pass/fail rules remain unavailable.
+- **Decision:** Preserve the official weights verbatim and design any reproducible project protocol as explicitly internal unless a later authoritative SIH source supplies the missing definitions.
+- **Evidence:** `docs/sih-evaluation-protocol.md`; `docs/evaluation-metrics.md`.
+
+## DEC-019 - Use an aligned case bundle and family-level split governance as a proposal
+- **Date:** 2026-10-04
+- **Context:** PrivateSight needs screenshot, DOM/accessibility, OCR, visual-region, privacy, and action evidence aligned to the same browser state, while variants can leak across roles.
+- **Decision:** Propose a versioned aligned case bundle and keep every source/template/generator/identity/site/task/document/capture family in one data role. Corpus generation and role assignment still require owner approval.
+- **Evidence:** `docs/visual-browser-corpus-spec.md`; `docs/visual-annotation-protocol.md`; `docs/contamination-policy.md`.
+
+## DEC-020 - Record the owner-approved bounded Prompt 6 scope
+- **Date:** 2026-10-04
+- **Context:** The owner response sheet resolved the Prompt 5 project-policy questions.
+- **Decision:** Use a restricted SIH/demo, academic, and internal-development scope; rights-clear training only; synthetic and controlled non-personal data; Phase 1 Chrome desktop on the reference Windows environment; Phase 2 Firefox after Chrome acceptance; owner-held frozen evaluation; fail-closed high-risk privacy policy; full-chain internal latency; and CPU/WASM fallback alongside the reference integrated-GPU class.
+- **Limit:** Unclear licenses, personal real data, official SIH formulas, contamination thresholds, final model/runtime/architecture, and universal browser support remain unresolved.
+- **Evidence:** Owner response sheet; `docs/owner-decision-gate.md`.
+
+## DEC-021 - Require the complete corpus-to-experiment gate chain
+- **Date:** 2026-10-04
+- **Context:** Owner-approved scope is insufficient for reproducible experiments without aligned artifacts, QA, contamination grouping, frozen custody, and qualified instrumentation.
+- **Decision:** Progress as blueprint → generation → capture → annotation → QA → contamination → role assignment/freeze → harness qualification → baselines. An affected artifact cannot bypass a failed gate.
+- **Evidence:** `docs/prompt6-experimental-plan.md`; `docs/acceptance-gates.md`; `docs/stop-conditions.md`.
+
+## DEC-022 - Keep Prompt 6 metrics internal and decomposed
+- **Date:** 2026-10-04
+- **Context:** Official SIH formulas remain unavailable, while reproducible engineering comparisons require explicit units.
+- **Decision:** Label formulas as `PRIVATE SIGHT INTERNAL METRIC`; report visual, PII, redaction, resource, and latency components separately; do not create an official or combined weighted score.
+- **Evidence:** `docs/benchmark-harness-spec.md`; `docs/sih-evaluation-protocol.md`.
+
+## DEC-023 - Use persistent lineage IDs and component-level role assignment
+- **Date:** 2026-10-04
+- **Context:** Screenshots, DOM, semantic representations, OCR, annotations, render variants, and tasks from one scenario can leak across roles.
+- **Decision:** Give every family/case/variant/capture/artifact a stable opaque ID and assign connected lineage/contamination components to one role only.
+- **Evidence:** `docs/corpus-generation-plan.md`; `docs/contamination-work-package.md`; `docs/frozen-evaluation-build-plan.md`.
+
+## DEC-024 - Implement Prompt 7 as non-production qualification infrastructure
+
+- **Date:** 2026-10-04
+- **Decision:** Keep controlled fixtures, capture, annotation, QA, contamination, split, benchmark, canary, and fingerprint logic under the pilot namespace. Generated evidence stays under ignored `artifacts/pilot/`.
+- **Limit:** This does not select or implement the production architecture, model, OCR engine, or runtime.
+- **Evidence:** `docs/prompt7-implementation-plan.md`; `docs/prompt7-evidence.md`.
+
+## DEC-025 - Use DOM-derived rendered text only as an alignment surrogate
+
+- **Date:** 2026-10-04
+- **Decision:** Use `dom-rendered-text-surrogate@1.0.0` to qualify geometry and cross-artifact handling without introducing an OCR selection.
+- **Limit:** It supplies no pixel OCR accuracy evidence and cannot enter an OCR candidate comparison as a measured OCR result.
+- **Evidence:** `docs/pilot-capture-report.md`; D-06; Prompt 7 §9.
+
+## DEC-026 - Calibrate contamination thresholds only for the pilot controls
+
+- **Date:** 2026-10-04
+- **Decision:** Version the three current thresholds as `pilot-contamination-1.0.0` after they separated the deliberate related and independent control pairs.
+- **Limit:** Thresholds are not universal and require broader non-frozen calibration before freeze.
+- **Evidence:** `docs/pilot-contamination-calibration.md`.
+

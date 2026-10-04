@@ -40,5 +40,5 @@ Date: 2026-10-04
 
 ## Open gate
 
-`OWNER-REQUIRED`: approve contamination thresholds, similarity methods, family-grouping keys, who may access frozen evaluation, and how public SIH material is screened. `BENCHMARK-DEPENDENT`: determine how strict near-duplicate clustering must be based on the eventual visual/browser corpus.
+D-08 approves the method families and default dispositions, while D-07 approves frozen-set custody and access principles. Numeric or algorithm-specific similarity thresholds remain `BENCHMARK-DEPENDENT` and must be calibrated, versioned, and reviewed on the actual corpus. Screening against any undisclosed official SIH corpus remains `UNKNOWN` until an authoritative source is available.
 

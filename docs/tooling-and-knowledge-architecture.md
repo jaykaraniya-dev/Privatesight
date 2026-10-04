@@ -44,3 +44,19 @@ Prompt 3 could not verify an extension-attached profile. On 2026-10-04, Chrome P
 - Verify browser behavior with browser tooling rather than source inspection.
 - Record current documentation sources at decision time; do not research technologies merely to exercise a connector.
 
+## Prompt 6 tool record
+
+- **Context7 — used.** Current documentation was consulted for Playwright 1.63.0, ONNX Runtime 1.25.0, and the current Transformers.js repository documentation. The resulting capability constraints and version caveats are recorded in `prompt6-evidence.md` and `runtime-experiment-plan.md`.
+- **Official browser documentation — used.** Chrome extension capture documentation and MDN documentation for Firefox/WebExtensions, WebGPU, and WebAssembly were consulted where Context7 did not own the browser API source.
+- **Playwright MCP — preserved.** No new browser action was needed. Prompt 4's bounded Chrome Profile 8 TodoMVC evidence remains the current live-verification record.
+- **OpenAI developer resources, Drive, Notion, Figma, and Superpowers — not required.** This gate neither uses OpenAI services nor depends on remote project material, design work, or implementation workflows.
+
+Documentation establishes API options and constraints only. It is not benchmark evidence, browser parity evidence, or proof that a configured backend will execute a particular model without fallback.
+
+## Prompt 7 tool record
+
+- **Superpowers — used.** Planning, TDD, systematic debugging, execution, and verification workflows structured the implementation.
+- **Context7 — used.** Official Playwright 1.63 documentation at `/microsoft/playwright/v1.63.0` verified the browser launch, Chrome channel, screenshot, request, bounding-box, metadata, and ARIA snapshot APIs used by the pilot.
+- **Playwright MCP — used.** The attached browser inspected a controlled synthetic auth page, saved a screenshot and accessibility snapshot, completed a safe action, and exposed the sanitized POST body.
+- **OpenAI developer resources, Drive, Notion, and Figma — not required.** No dependency or authoritative input for this gate required them.
+

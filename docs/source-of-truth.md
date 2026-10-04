@@ -57,3 +57,12 @@ Do not copy raw candidate data or personal information into connected systems. K
 
 `docs/prompt3-evidence.md` is the canonical ledger for architecture-level claims and decision states. The focused architecture documents own their named concerns; they do not approve a topology, model, runtime, or browser support matrix.
 
+## Prompt 4-6 evidence ownership
+
+- `docs/prompt4-evidence.md` owns the dataset-audit and bounded human-verification evidence from Prompt 4.
+- `docs/owner-decision-gate.md` owns the binding D-01 through D-12 policy baseline supplied by the project owner. Focused Prompt 5 specifications interpret those decisions but may not change them.
+- `docs/prompt6-evidence.md` owns the Prompt 6 repository and external-documentation ledger.
+- `docs/prompt6-experimental-plan.md` owns the controlled-readiness sequence. Its focused work-package, capture, annotation, contamination, freeze, harness, experiment, gate, and stop-condition documents own their named procedures.
+
+Prompt 6 documents specify future experimental work. They do not prove that a corpus has been generated, annotations have passed QA, a frozen set exists, a benchmark has run, or a model/runtime/architecture has been selected.
+

@@ -1,6 +1,8 @@
-# Open Questions After Prompt 4 Evidence Audit
+# Open Questions After Prompt 5 Decision Specification
 
-Prompt 3 translated Prompt 2 evidence into candidate architectures and explicit decision boundaries. The following questions still block final architecture/model selection and implementation planning.
+Prompt 3 translated Prompt 2 evidence into candidate architectures and explicit decision boundaries. The following list is the continuing evidence backlog. Items resolved by D-01 through D-12 are retained with their disposition so they are not mistaken for unanswered owner questions.
+
+`owner-question-pack.md` was the canonical minimum question set for the owner response. The response is now recorded in `owner-decision-gate.md`; the longer list below remains the evidence backlog and must not be treated as a second decision form. Decision IDs D-01 through D-12 are defined there.
 
 ## Official evaluation protocol
 1. Is there a complete SIH26171 source page or rubric that defines metric formulas, scoring ranges, aggregation, tie-breaking, or minimum acceptance?
@@ -47,16 +49,16 @@ Prompt 3 translated Prompt 2 evidence into candidate architectures and explicit 
 32. What is the final SIH submission date, demo environment, pitch duration, and acceptance owner?
 34. Should the local competitor video be treated as the supplied YouTube reference despite the unverified URL-to-file linkage?
 
-## Prompt 4 dataset and evidence decisions
+## Prompt 4 dataset and evidence decision dispositions
 
-35. Is the intended dataset use limited to the SIH academic competition, or must all selected data also permit later commercial/open-source use?
-36. Who is authorized to approve custom, noncommercial, Reuters, NVIDIA, and conflicting Ai4Privacy terms?
-37. Which proposed PII classes are in the default fail-closed gate, and what public/private context exceptions are permitted?
-38. Which languages, browsers, operating systems, viewport/zoom/theme variants, page types, and hardware classes must the visual corpus cover?
-39. What annotation unit and adjudication process apply to text spans, OCR boxes, visual boxes/masks, DOM nodes, contextual sensitivity, and action targets?
-40. Who will hold the frozen evaluation set, who may access it, and what event invalidates and replaces it?
-41. What exact similarity methods and thresholds define near-duplicate, template, identity, and layout contamination?
-42. Are controlled synthetic browser fixtures sufficient for the initial gate, or is consented real/browser-derived data required?
+35. **Resolved by D-01:** SIH/demo, academic research, internal development, rights-cleared training, and public methodology/sanitized metadata are allowed; uncleared redistribution/commercial use remains blocked.
+36. **Authority resolved by D-01; case-specific evidence remains:** the owner may approve only clearly permitted project-policy use; institutional/legal or licensor clarification handles unclear terms.
+37. **Resolved in principle by D-02/D-03:** the working taxonomy and fail-closed categories are approved; exact context predicates remain versioned benchmark/policy work.
+38. **Staged by D-04/D-11/D-12:** Phase 1 is Chrome desktop on the reference Windows/device class; exact versions and measured condition coverage remain execution evidence.
+39. **Resolved in principle by D-06:** multimodal annotation, independent evaluation review, adjudication, versioning, and ambiguity labels are approved; operational schema/version and measured QA remain work.
+40. **Resolved in principle by D-07:** owner custody, named backup, protected labels, immutable versioning, and invalidation rules are approved; the names/access list are recorded at freeze.
+41. **Methods/actions resolved by D-08; thresholds remain benchmark-dependent:** calibration and audit-version details must be fixed before role assignment/freeze.
+42. **Resolved by D-05:** synthetic and controlled non-personal data are sufficient for the initial gate; personal real-data collection is deferred.
 
 ## Prompt 2 disposition
 
@@ -72,5 +74,5 @@ The Playwright MCP connection was runtime verified on 2026-10-04 through Chrome 
 
 ## Next decision gate
 
-Before implementation planning or model selection, the owner must approve the intended-use/license policy, PII taxonomy and fail-closed rules, visual/browser corpus and annotation protocol, split/frozen-set governance, browser/device/task matrix, and the missing evaluation definitions. Architecture/runtime/model choices remain benchmark-dependent.
+Prompt 6 may proceed using the owner-approved scope. Remaining questions are exact dataset clearances and role assignments, operational contamination thresholds, internal aggregation/run-validity details, exact browser/OS/hardware/runtime versions, and official SIH definitions. Architecture/runtime/model choices remain benchmark-dependent.
 

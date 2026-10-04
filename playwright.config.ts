@@ -14,9 +14,16 @@ export default defineConfig({
     ['html', { outputFolder: 'artifacts/test-results/html-report', open: 'never' }],
     ['list'],
   ],
+  projects: [
+    {
+      name: 'chrome-phase-1',
+      use: { channel: 'chrome' },
+    },
+  ],
   use: {
+    viewport: { width: 1280, height: 720 },
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
-    video: 'retain-on-failure',
+    video: 'off',
   },
 });

@@ -4,11 +4,17 @@
   "version": "0.0.0",
   "description": "PrivateSight project scaffold",
   "scripts": {
-    "test": "playwright test",
+    "build": "node scripts/pilot-cli.cjs build",
+    "test": "node --test \"tests/unit/*.test.cjs\" \"tests/integration/*.test.cjs\" && node scripts/pilot-cli.cjs build && node node_modules/@playwright/test/cli.js test tests/e2e/pilot.spec.ts",
+    "test:node": "node --test \"tests/unit/*.test.cjs\" \"tests/integration/*.test.cjs\"",
+    "test:e2e": "node scripts/pilot-cli.cjs build && node node_modules/@playwright/test/cli.js test tests/e2e/pilot.spec.ts",
     "test:ui": "playwright test --ui",
-    "test:report": "playwright show-report"
+    "test:report": "playwright show-report",
+    "pilot:run": "node scripts/pilot-cli.cjs run",
+    "pilot:serve": "node scripts/pilot-cli.cjs serve",
+    "pilot:compare": "node scripts/compare-pilot-runs.cjs"
   },
   "devDependencies": {
-    "@playwright/test": "latest"
+    "@playwright/test": "1.63.0"
   }
 }

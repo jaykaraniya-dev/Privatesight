@@ -1,16 +1,16 @@
 # Dataset Split Strategy
 
 Date: 2026-10-04
-Status: `PROPOSED`; no candidate has been assigned a final role.
+Status: `OWNER-APPROVED ROLE GOVERNANCE`; no current external candidate has been cleared or assigned a final role.
 
 ## Split roles
 
 | Role | Permitted use | Prohibited use | Current status |
 | --- | --- | --- | --- |
-| Training | Fit model parameters or develop learned components on rights-approved data. | Metric reporting as independent evidence; inclusion of frozen or demo cases. | OWNER-REQUIRED |
-| Validation | Tune thresholds, preprocessing, taxonomy mappings, runtime choices, policies, architecture settings, and prompts. | Final claims or any access to frozen answers. | BENCHMARK-DEPENDENT. |
-| Frozen evaluation | Measure the five SIH dimensions under a versioned protocol after all tuning decisions are locked. | Training, prompt design, debugging, threshold selection, model/runtime selection, or repeated manual inspection. | OWNER-REQUIRED |
-| Demo/manual verification | Demonstrations, browser connectivity checks, presentation evidence, and human workflow review. | Scored evaluation or parameter tuning unless explicitly reclassified before use. | PROPOSED |
+| Training | Fit model parameters or develop learned components on rights-approved synthetic, controlled non-personal, or explicitly cleared data. | Metric reporting as independent evidence; inclusion of frozen or demo cases. | APPROVED POLICY |
+| Validation | Tune thresholds, preprocessing, taxonomy mappings, runtime choices, policies, architecture settings, and prompts on family-separated data. | Final claims or any access to frozen answers. | APPROVED POLICY |
+| Frozen evaluation | Measure the five SIH dimensions under a versioned protocol after all tuning decisions are locked, using synthetic/controlled non-personal holdouts. | Training, prompt design, debugging, threshold selection, model/runtime selection, or repeated manual inspection. | APPROVED POLICY |
+| Demo/manual verification | Demonstrations, browser connectivity checks, presentation evidence, and human workflow review using synthetic or controlled non-personal cases. | Scored evaluation or parameter tuning unless explicitly reclassified before use. | APPROVED POLICY |
 
 Publisher split names do not assign PrivateSight roles. A publisher `test` split can share generator, template, identity, or source lineage with its train split and cannot automatically become frozen evaluation.
 
@@ -39,10 +39,10 @@ Publisher split names do not assign PrivateSight roles. A publisher `test` split
 
 `PROPOSED`: create controlled pages with fictitious identities and nonfunctional synthetic secrets, then capture paired DOM, semantic/ARIA signals, screenshots, OCR boxes/text, sensitive boxes/masks, expected sanitized output, page-state predicates, and safe action targets. Record template and generator identifiers at creation time.
 
-`OWNER-REQUIRED`: annotation protocol, adjudication, quality sampling, language/browser/device coverage, frozen-set custodian, and access policy.
+`OWNER-APPROVED POLICY`: D-06 approves annotation/adjudication and D-07 approves custody/access governance. D-04, D-11, and D-12 establish the staged Chrome/Windows/reference-device scope. Exact protocol versions, named custodians, quality sampling, and measured coverage remain execution work.
 
-`UNKNOWN`: final sample counts. Counts depend on the unresolved SIH metric definitions, taxonomy, class prevalence, browser/device matrix, and statistical confidence target.
+`UNKNOWN`: final sample counts. Counts depend on pilot coverage, class prevalence, variance, internal metric calibration, and any later official SIH protocol.
 
 ## Real-data policy
 
-Any real-data collection requires explicit consent, purpose limitation, data minimization, controlled access, encryption, retention/deletion schedules, revocation handling, and a prohibition on public-repository storage. Real credentials, tokens, cookies, private accounts, and personal browser profiles are excluded from collection.
+D-05 defers personal real-data collection. The initial corpus uses synthetic and controlled non-personal cases only. Any later proposal requires a new owner decision plus explicit consent, purpose limitation, data minimization, controlled access, encryption, retention/deletion schedules, revocation handling, and public-repository exclusion. Real credentials, tokens, cookies, private accounts, and personal browser profiles remain excluded.

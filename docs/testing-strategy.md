@@ -1,6 +1,6 @@
 # Testing Strategy
 
-Status: repository scaffold only; no PrivateSight-specific behavior has been implemented or validated.
+Status: Prompt 7 qualification infrastructure is implemented and tested; production PrivateSight behavior is not implemented.
 
 ## Required evidence as implementation develops
 1. Unit tests for isolated logic.
@@ -10,11 +10,14 @@ Status: repository scaffold only; no PrivateSight-specific behavior has been imp
 5. ML evaluation with frozen final evaluation data, per-label metrics, false-positive/negative analysis, and reproducible experiment metadata.
 6. Security/privacy tests, including evidence that raw sensitive context cannot bypass the privacy gate or reach any outbound channel.
 
-## Current scaffold evidence
-The repository has a generic Playwright config and one placeholder test that navigates to `example.com`. It does not exercise a PrivateSight extension, privacy gate, or local detection behavior. `.codex/config.toml` declares Playwright MCP extension mode, but that declaration alone proves neither service initialization nor browser verification. No browser behavior is claimed by this document.
+## Current qualification evidence
+
+Node unit tests cover manifests, generation, annotation schema, coordinates, QA, contamination, split guards, metrics, canaries, environment, and reproducibility normalization. Integration tests cover generation/capture, annotation/QA, benchmark fixtures, outbound canary observation, CLI behavior, and the full run. Playwright Test covers a generated Chrome case. Playwright MCP independently inspected one controlled auth case and its sanitized HTTP payload.
+
+These tests exercise test infrastructure and synthetic fixtures. They do not exercise a production extension, trained detector, pixel OCR, server model, or final privacy gate.
 
 ## Artifacts and privacy
-Store useful traces/screenshots/reports under `artifacts/test-results/` when future tests generate them. Ensure artifacts do not retain real private PII. Use synthetic fixtures where practical and never automate against a personal browser profile.
+Store Prompt 7 runtime evidence under ignored `artifacts/pilot/` and framework traces under ignored test-result locations. Fixtures use synthetic markers only. Never automate against a personal browser profile.
 
 ## Acceptance
 Tie test suites to confirmed product requirements and the operational metric protocol in `evaluation-metrics.md`; do not invent thresholds. Preserve and investigate failures rather than suppressing them.

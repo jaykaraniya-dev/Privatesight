@@ -10,7 +10,7 @@ Scope: evidence review, not legal advice or use approval.
 - `RESTRICTED/UNCLEAR`: noncommercial/custom/restricted terms, conflicting evidence, or upstream mixtures block ordinary adoption.
 - `UNKNOWN`: no reliable rights evidence was found.
 
-No candidate is classified `CLEAR` at this gate because intended use, redistribution plan, and source lineage have not been approved.
+No candidate is classified `CLEAR`. D-01 now defines allowed project uses and the approval authority, but it does not cure missing, conflicting, restricted, or incomplete per-dataset rights and provenance. Each candidate still requires source-specific clearance before training, validation, frozen evaluation, redistribution, or derived-data publication.
 
 | Dataset | License status | Evidence | Commercial / derivative / redistribution implications | Provenance status | Repository handling |
 | --- | --- | --- | --- | --- | --- |
@@ -28,9 +28,9 @@ No candidate is classified `CLEAR` at this gate because intended use, redistribu
 
 ## Required approval evidence
 
-`OWNER-REQUIRED` before use:
+Required before use under D-01:
 
-1. intended use: research prototype, competition demonstration, publication, redistribution, or commercial use;
+1. map the proposed use to D-01 and obtain any source-specific institutional/legal or licensor approval it requires;
 2. authoritative license text/version and attribution obligations;
 3. rights in source material and generated outputs, not only model-card metadata;
 4. permission to create and distribute derivatives, annotations, screenshots, or trained artifacts;

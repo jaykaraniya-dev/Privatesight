@@ -3,7 +3,7 @@
 PrivateSight is a privacy-preserving browser agent for the SIH context “On-device Visual Perception for Light-weight Browser Agents.” The reconciled source of project requirements is `PROJECT.md` plus the canonical documents linked there.
 
 ## Current gate
-Prompt 1 authoritative intake, Prompt 2 evidence research, Prompt 3 architecture decision-boundary work, and Prompt 4 dataset/evaluation evidence audit are complete. Prompt 4 established the dataset, licensing, contamination, taxonomy, split, evaluation-data, and human-verification foundation. Do not begin feature implementation, final architecture/model selection, or dataset training. The remaining owner and benchmark decisions are tracked in `docs/open-questions.md` and `docs/prompt4-evidence.md`.
+Prompt 1–6 planning is complete and Prompt 7 has qualified a small synthetic pilot lifecycle. Start with `docs/prompt7-evidence.md`, then review `docs/pilot-corpus-spec.md`, `docs/pilot-benchmark-report.md`, and `docs/privacy-canary-report.md`. The pilot is non-frozen test infrastructure. No training run or final architecture/model/runtime/OCR selection has occurred.
 
 ## Reference intake
 Index authorized SIH documents, research material, competitor notes, or design references in `references/README.md` or link the connected source. Record source/provenance and concise evidence in `docs/research.md`. Do not duplicate copyrighted material without need or place secrets/private PII in this repository.

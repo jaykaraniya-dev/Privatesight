@@ -1,8 +1,8 @@
 # Evaluation Plan
 
-Status: Prompt 4 preserves the five dimensions and weights as the only official scoring details available. No PrivateSight benchmark has been approved or run. The TodoMVC manual check is browser-tool connectivity evidence, not benchmark evidence.
+Status: Prompt 6 specifies the Internal Evaluation Protocol and Prompt 7 implements its minimum fixture-mode harness. Perfect and known-error fixtures validate calculation and serialization paths, and repeat runs validate deterministic content after declared run-time exclusions. These are harness tests, not model results. The five dimensions and weights remain the only official SIH scoring details available.
 
-Use `evaluation-metrics.md` as the metric register and `evaluation-data-requirements.md` for the required corpus/evidence. Before evaluation begins, the owner must resolve task cases, ground truth, formulas, target browsers/devices, workload, timing boundaries, resource measures, sample sizes, aggregation, thresholds, and acceptance owner. Existing evidence records bounded options without inventing SIH rules.
+Use `evaluation-metrics.md` as the metric register, `evaluation-data-requirements.md` for the required corpus/evidence, `sih-evaluation-protocol.md` for the official/internal boundary, `benchmark-harness-spec.md` for instrumentation, `experiment-matrix.md` for controlled comparisons, and `acceptance-gates.md` for readiness. Before execution, version task cases, ground truth, workload, aggregation, resource measures, sample policy, contamination thresholds, and exact platform metadata.
 
 The later plan must include:
 - frozen screen/browser tasks with modality-specific ground truth;

@@ -23,8 +23,19 @@ The gate produced `docs/prompt2-evidence.md`, but owner decisions remain open wh
 ## Gate 3 - Owner decisions and architecture/model comparison
 Complete on 2026-10-03 as a decision-boundary stage. Prompt 3 produced architecture candidates, browser/runtime comparisons, privacy/action boundaries, and owner-required decisions without selecting a final model, runtime, browser matrix, or architecture.
 
-## Gate 4 - Owner decisions before implementation planning
-Prompt 4 must obtain the required metric, threat-model, outbound-contract, browser/device, data-rights, action-policy, and evaluation-plan decisions. Only then may implementation planning compare and select an approved architecture/model scope.
+## Gate 4 - Dataset/evaluation evidence audit
+Complete on 2026-10-04. Prompt 4 audited all 11 candidates, licensing/provenance and contamination evidence, the visual/browser gap, taxonomy, four data roles, evaluation-data needs, and bounded Playwright verification. No dataset role was approved and no raw data was changed.
 
-Architecture planning begins only after these inputs are available and owner decisions are recorded.
+## Gate 5 - Owner-decision and benchmark specification
+Complete on 2026-10-04 as a pre-implementation specification gate. Prompt 5 created the D-01–D-12 decision register and question pack, visual/browser corpus and annotation specifications, contamination governance, SIH/internal evaluation boundary, platform matrix, benchmark design, and decision dependency graph. It made no owner decision, generated no corpus, ran no benchmark, and selected no model, runtime, or architecture.
+
+## Gate 6 - Bounded execution plan
+Complete on 2026-10-04 as a specification gate. Prompt 6 defines the authorized Chrome/Windows synthetic-first corpus, capture, annotation, QA, contamination, split/freeze, benchmark, runtime, experiment, acceptance, and stop-condition work packages. It generated no corpus, built no harness, ran no experiment, and selected no model/runtime/architecture.
+
+## Gate 7 - Pilot corpus and harness qualification
+Complete on 2026-10-04 for the bounded qualification scope. Twelve synthetic cases across eleven families passed aligned capture, annotation QA, family-aware pilot splitting, fixture benchmark validation, canary detection, declared-channel observation, repeat comparison, and reference-environment fingerprinting. All four Prompt 7 gates passed with documented limits. `PILOT_HOLDOUT` remains pre-freeze.
+
+## Gate 8 - Candidate experiments on non-frozen fixtures
+
+Run controlled structural, visual, OCR, hybrid, and runtime candidates only after each candidate's dependency, backend, outbound behavior, and environment metadata are incorporated into the Prompt 7 controls. Results remain internal and provisional. Build and protect a separate frozen evaluation release before final selection claims.
 

@@ -1,6 +1,6 @@
 # Repository Audit — Prompt 0
 
-**Date:** 2026-10-03 (client local date)  
+**Date:** 2026-10-03 (client local date)
 **Scope:** Repository and documentation reconciliation only. No product feature, model selection, training, or raw-data edits.
 
 ## Project summary
@@ -54,7 +54,7 @@ All ten Prompt 0 reporting questions are answered in `PROJECT.md` and the linked
 
 # Repository Audit - Prompt 1 Intake
 
-**Date:** 2026-10-03  
+**Date:** 2026-10-03
 **Scope:** Authoritative project intake and documentation reconciliation. No implementation, architecture selection, model selection, training, or raw-data modification.
 
 ## Evidence inspected
@@ -129,4 +129,57 @@ Prompt 1 stops here. Architecture research/selection, implementation, model trai
 ## Gate finding
 
 The text candidates can support limited future text research only after rights and quality approval. They do not supply the visual/browser evidence needed for screenshot understanding, OCR localization, visual PII regions, redaction masks, DOM/accessibility alignment, browser state, or action grounding. Owner decisions and a rights-cleared visual/browser corpus remain prerequisites for experiments and implementation planning.
+
+# Repository Audit — Prompt 5 Decision and Benchmark Specification
+
+**Date:** 2026-10-04
+**Scope:** pre-implementation owner decisions, visual/browser corpus and annotation specification, contamination governance, SIH/internal evaluation boundary, platform matrix, benchmark design, and dependency mapping.
+
+## Prompt 5 documentation changes
+
+- Created `owner-decision-gate.md` with the canonical D-01–D-12 register and explicit owner-required choices.
+- Created `owner-question-pack.md` with the minimum neutral questions required before Prompt 6.
+- Created `visual-browser-corpus-spec.md` and `visual-annotation-protocol.md` without generating or assigning data.
+- Created `contamination-policy.md` while preserving Prompt 4's confirmed duplicate counts and separating candidate methods from unapproved thresholds.
+- Created `sih-evaluation-protocol.md`, `evaluation-platform-matrix.md`, and `benchmark-design.md` without inventing SIH formulas, platform parity, thresholds, or results.
+- Created `decision-dependency-graph.md` to distinguish blocking decisions from work that can proceed after an approved bounded scope.
+- Updated current status and links in `PROJECT.md`, `README_FIRST.md`, `open-questions.md`, `risk-register.md`, `decisions.md`, `roadmap.md`, `dataset-strategy.md`, `evaluation-plan.md`, `evaluation-metrics.md`, and `research.md`.
+
+## Gate finding
+
+The repository now contains an owner-approved bounded scope for Prompt 6. No raw dataset was modified, no corpus was generated, no benchmark was run, no external service was written, and no final model, runtime, browser matrix beyond the staged benchmark scope, metric formula, or architecture was selected.
+
+# Repository Audit — Owner Response Integration
+
+**Date:** 2026-10-04
+
+The owner response sheet was incorporated into `owner-decision-gate.md`, `decision-dependency-graph.md`, `PROJECT.md`, `README_FIRST.md`, `roadmap.md`, `open-questions.md`, `decisions.md`, `evaluation-plan.md`, `evaluation-metrics.md`, `visual-browser-corpus-spec.md`, `visual-annotation-protocol.md`, `contamination-policy.md`, `sih-evaluation-protocol.md`, `evaluation-platform-matrix.md`, and `benchmark-design.md`.
+
+The update changes project-policy decisions from owner-required to recorded outcomes where the response supplied an answer. It preserves unresolved per-dataset rights, exact platform versions, contamination thresholds, official SIH formulas, benchmark results, and final model/runtime/architecture choices as open or benchmark-dependent.
+
+# Repository Audit — Prompt 6 Experimental Readiness Planning
+
+**Date:** 2026-10-04
+**Scope:** bounded corpus, capture, annotation, QA, contamination, frozen-evaluation, benchmark-harness, runtime-experiment, acceptance-gate, and stop-condition specifications.
+
+## Documentation changes
+
+- Created the 14 required Prompt 6 documents: the experimental plan, corpus work packages and generation plan, capture protocol, annotation package and QA gate, contamination work package, frozen-evaluation build plan, benchmark-harness specification, experiment matrix, runtime-experiment plan, acceptance gates, stop conditions, and Prompt 6 evidence ledger.
+- Updated `PROJECT.md`, `README_FIRST.md`, roadmap, decisions, research, risk, evaluation, dependency, source-of-truth, and tooling records to reflect specification readiness without claiming experimental completion.
+- Reconciled Prompt 4 status language with the binding D-01 through D-12 decisions while preserving unresolved dataset rights, official SIH formulas, calibration thresholds, benchmark results, and final technical selections.
+- Consulted current Context7 documentation for Playwright, ONNX Runtime, and Transformers.js, plus official Chrome and MDN browser/runtime documentation. These sources bound planned experiments; they do not supply performance results.
+
+## Safety and scope
+
+No product code, corpus case, annotation, frozen set, benchmark result, trained model, runtime selection, final architecture, or external-system write was produced. No Playwright interaction was repeated. Raw candidate data remained read-only and excluded from Git.
+
+The Prompt 6 read-only integrity check matched the supplied baseline exactly: 11 top-level folders, 394 files, and 14,154,310,444 bytes under `datasets/raw/`; Git reported no raw-path change.
+
+# Repository Audit — Prompt 7 Pilot Qualification
+
+**Date:** 2026-10-04
+
+Prompt 7 added bounded pilot source fixtures, `src/pilot/` qualification utilities, Node and Playwright tests, a fixture benchmark, canary observation, environment fingerprinting, and the 13 requested Prompt 7 reports. Runtime screenshots and machine results remain under ignored `artifacts/pilot/`. The placeholder `example.com` Playwright smoke test was replaced by the controlled local pilot test.
+
+No raw candidate data, final model/runtime/OCR choice, production extension feature, official SIH formula, or frozen evaluation release was introduced. Final verification records tests, repeat comparison, raw-data integrity, ignored-artifact behavior, Markdown links, Git whitespace, and changed-file review.
 

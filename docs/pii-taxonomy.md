@@ -1,15 +1,17 @@
 # PrivateSight PII and Sensitive-Data Taxonomy
 
 Date: 2026-10-04
-Status: `PROPOSED`; policy approval remains `OWNER-REQUIRED`.
+Status: `OWNER-APPROVED WORKING TAXONOMY`; individual thresholds, context predicates, and visual coverage remain `BENCHMARK-DEPENDENT`.
 
 ## Purpose and decision boundary
 
 This taxonomy defines candidate detection and redaction classes for data that may appear in DOM text, accessibility-derived semantics, OCR output, screenshots, browser state, or extension-owned storage. It is broader than conventional identity PII because the PrivateSight privacy gate must also protect credentials, session material, private content, and sensitive visual regions.
 
-The table does not authorize collection, transmission, or model training. A category is in the proposed default gate when a missed detection could expose a person, account, secret, or private context. Context-dependent categories still require an owner policy and conservative handling until that policy exists.
+The table does not authorize collection, transmission, or model training. High-risk or uncertain protected content is fail-closed by the approved policy. Context-dependent categories remain conservative and require explicit derived-data handling; the taxonomy approval does not clear any dataset or establish detector performance.
 
 ## Detection and redaction taxonomy
+
+All listed categories are included in the owner-approved working taxonomy. In the final column, `PROPOSED` describes an unvalidated detection/redaction method, `BENCHMARK-DEPENDENT` describes a choice requiring experiments, and `OWNER-REQUIRED` means a category-specific exception or outbound treatment still needs explicit owner review. Those labels do not reopen D-02 or weaken D-03's fail-closed default.
 
 | Group / category | Candidate detection methods | Sources | Localization needed | Candidate redaction | Main false-positive risk | Main false-negative risk | Default gate | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -45,7 +47,7 @@ The table does not authorize collection, transmission, or model training. A cate
 - `PROPOSED`: preserve source provenance for every detection: DOM node, semantic signal, OCR span, visual region, or browser-state field.
 - `PROPOSED`: pixel export requires pixel-space coverage even when the detection began in DOM text.
 - `PROPOSED`: secret-bearing classes use full-value removal rather than reversible blur or partial masking unless an approved contract explicitly permits a derived field.
-- `OWNER-REQUIRED`: define public-versus-private context, face policy, QR/barcode uncertainty, permissible derived account state, and whether ambiguity always fails closed.
+- `OWNER-APPROVED`: public/private context is sensitivity-dependent; credentials, secrets, payment data, private notifications/documents, security-sensitive state, biometric-like content, and uncertain QR/barcodes fail closed by default. Safe derived representations require task necessity and the outbound policy.
 - `BENCHMARK-DEPENDENT`: thresholds, fusion rules, OCR languages, face/signature/QR detectors, and redaction style.
 
 ## Dataset mapping status
